@@ -33,7 +33,7 @@
 	position: relative;
 }
 
-#nav u1 {
+#nav ul {
 	background-color: white;
 	border: 1px solid #a9a9a9;
 	-moz-border-radius: 7px;
@@ -43,7 +43,7 @@
 	padding: 0;
 }
 
-#nav u1 li {
+#nav ul li {
 	display: inline;
 	float: left;
 	height: 16px;
@@ -73,6 +73,7 @@
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
 	-khtml-border-radius: 7px;
+	width:920px;
 }
 
 .inslider {
@@ -132,7 +133,6 @@
 	-khtml-border-radius: 5px;
 }
 
-}
 	
 
 

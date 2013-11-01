@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	/************************************************************************
 	* Function Definitions *
-	************************************************************************ /
+	************************************************************************/
 	rotate =function() {
 		var slideid = $active.attr("rel") -1;
 		var slidedistance = slideid * imgwidth;
@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 		$active.addClass('active');
 
-		$(".imageslider").animate({left: -slidedistance}, 500);
+		$(".imgslider").animate({left: -slidedistance}, 500);
 	};
 
 	rotation = function() {
@@ -27,7 +27,7 @@ $(document).ready(function(){
 		} , 5000);
 	};
 
-	$(".imagenav a").click(functional(){
+	$(".imagenav a").click(function(){
 		$active =$(this);
 		clearInterval(play);
 		rotate();
@@ -39,24 +39,24 @@ $(document).ready(function(){
 
 	/************************************************************************
 	* End of Function Defintions *
-	************************************************************************ /
+	************************************************************************/
 
 	/************************************************************************
 	* Main Code  *
-	************************************************************************ /
+	************************************************************************/
 
 
 	$(".imagenav a:first").addClass("active");
 
 	var imgwidth =$(".imageholder").width();
-	var totalimg = $(".imageslider img").size();
+	var totalimg = $(".imgslider img").size();
 	var allimgwidth = imgwidth * totalimg;
-	$(".imageslider").css({'width':allimgwidth});
+	$(".imgslider").css({'width':allimgwidth});
 	rotation();
 
 
 	/************************************************************************
 	* End of Main Code *
-	************************************************************************ /
+	************************************************************************/
 
 	});
